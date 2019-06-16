@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .bosluk1 {
+            height: 250px;
+            width: 400px;
+            padding: 25px;
+            margin: 25px;
+        }
+
+        .bosluk2 {
+            height: 20px;
+            width: 200px;
+        }
+
+        .row {
+            padding-top: 1.5%;
+        }
+
+        label {
+            padding-top: 1%;
+            text-align: center;
+        }
+
+        #motortestler .row label {
+            text-align: center !important;
+        }
+        #motortestler .row{
+            border:1px solid black;
+        }
+        .row label{
+            text-align:left;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+
+    <div class="container">
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#kisiselBilgiler">Kişisel Bilgiler</a></li>
+            <li><a data-toggle="tab" href="#okulBilgileri">Okul Bilgileri</a></li>
+            <li><a data-toggle="tab" href="#lisansbilgileri">Spor Lisans Bilgileri</a></li>
+            <li><a data-toggle="tab" href="#antropometrikolcumler">Antropometrik Ölçümler</a></li>
+            <li><a data-toggle="tab" href="#motortestler">Motor Testler</a></li>
+            <li> <a data-toggle="tab" href="#gorusler">Görüşler</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="kisiselBilgiler" class="tab-pane fade in active">
+                <div class="container">
+                    <div class="well">
+                        <div class="row">
+                            <label class="col-md-2">İşlem tarihi:</label>
+                            <div class="col-md-3">
+                                <input type="date" class="form-control" />
+                            </div>
+                            <label class="col-md-2 col-md-offset-1">Velinin;</label>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2">T.C Kimlik No</label>
+                            <div class="col-md-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-primary" type="button">Sorgula</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <label class="col-md-2 col-md-offset-1">Adı Soyadı:</label>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2"> Adı Soyadı:</label>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" />
+                            </div>
+                            <label class="col-md-2 col-md-offset-1"> Telefon:</label>
+                            <div class=" col-md-3">
+                                <input type="tel" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2">İşlem tarihi:</label>
+                            <div class="col-md-3">
+                                <input type="date" class="form-control" />
+                            </div>
+                            <label class="col-md-2 col-md-offset-1">E-mail adresi:</label>
+                            <div class="col-md-3">
+                                <input type="email" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2">Doğum tarihi</label>
+                            <div class="col-md-3">
+                                <input type="date" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2">Cinsiyet:</label>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <select class="form-control" id="sel1">
+                                        <option>Erkek</option>
+                                        <option>Kız</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2" style="padding:0.5%">Menarş Durumu:</label>
+                            <div class="col-md-3">
+                                <form>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio">Var
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio">Yok
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2">Kardeş Sayısı:</label>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2 col-md-offset-8">
+                                <button class="btn btn-primary form-control">Kaydet</button>
+                            </div>
+                            <div class="col-md-2">
+                                <button class="btn btn-primary form-control">İleri</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="okulBilgileri" class="tab-pane fade">
+                <div class="container">
+
+                    <div class=" well">
+                        <div class="row">
+
+                            <label class="col-md-2">
+                                Okul Adı:
+                            </label>
+
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" />
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <label class="col-md-2">Sınıfı: </label>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="row col-md-12">
+
+                        </div>
+                        <div class="row col-md-12">
+                            <div class="row bosluk1">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="col-md-2 col-md-offset-8 btn btn-primary"> Kaydet </button>
+                            <button class="col-md-1 col-md-1 btn btn-primary"> İleri</button>
+                        </div>
+                        <div class="row bosluk2">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="lisansbilgileri" class="tab-pane fade">
+                <div class="container">
+                    <div class="well">
+                        <div class="row">
+                            <label class="col-md-2">Spor yapıyor mu?</label>
+                            <div class="form-group col-md-2">
+                                <select class="form-control" id="sel1">
+                                    <option>Evet</option>
+                                    <option>Hayır</option>
+                                </select>
+                            </div>
+                            <label class="col-md-2 col-md-offset-2">Lisanslı Sporcu mu?</label>
+                            <div class="form-group col-md-2">
+                                <select class="form-control" id="sel1">
+                                    <option>Evet</option>
+                                    <option>Hayır</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2">
+                                Okul İçi Hafta; <br />
+                                Hafta:
+                            </label>
+                            <div class="form-group col-md-1">
+                                <select class="form-control" id="sel1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+
+                                </select>
+
+                            </div>
+                            <label class="col-md-1"> Saat:</label>
+                            <div class="form-group col-md-1">
+                                <select class="form-control" id="sel1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <label class="col-md-2 col-lg-offset-1"> Branşı:</label>
+                            <div class="form-group col-md-3">
+                                <select class="form-control" id="sel1">
+                                    <option>Atletizm Federasyonu</option>
+                                    <option>Basketbol Federasyonu</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <label class="col-md-2"> Okul Dışı; <br /> Hafta:</label>
+
+                            <div class="col-md-1">
+                                <select class="  form-control" id="sel1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <label class="col-md-1"> Saat:</label>
+                            <div class="col-md-1">
+                                <select class="form-control" id="sel1">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                </select>
+                            </div>
+
+                            <label class="col-md-2 col-md-offset-1">Son vize tarihi:</label>
+                            <div class="col-md-2 ">
+                                <input class="form-control" type="date" />
+                            </div>
+                            <div class="col-md-1">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="btn-group col-md-2 col-md-offset-8">
+                                <button type="button" class="btn btn-primary">Kaydet</button>
+                                <button type="button" class="btn btn-primary">İleri</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="antropometrikolcumler" class="tab-pane fade">
+                <div class="container well">
+                    <div class="row">
+                        <label class=" col-md-2 text-left"> Boy(cm)</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2 text-left">Vücut Ağırlığı(kg)</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <label class="col- col-md-2 ">BMI(Vücut Kitle Endeksi)</label>
+                        <div class="col-md-3">
+                            <div class="well well ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">Oturma Yüksekliği(cm)</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">MI(Manouvrier Index)</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-2">Kulaç Uzunluğu(cm)</label>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="btn-group col-md-offset-2" style="padding-left:1.4%">
+                            <button type="button" class="  btn btn-info"> Kaydet</button>
+                            <button type="button" class="  btn btn-info ">İleri</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="motortestler" class="tab-pane fade">
+                <div class="container well">
+
+                    <div class="row" style="font-family:'Arial Rounded MT'; font-size:x-large; color:slategrey">
+                        <label class="col-md-3">Test Adı</label>
+                        <label class="col-md-3">Ölçü birimi</label>
+                        <label class="col-md-4">Deneme Sayısı</label>
+                        <label class="col-md-2">Sonuç</label>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3">Pençe Kuvveti</label>
+                        <label class="col-md-3">kg/kuvvet</label>
+                        <div class="col-md-4">
+                            <label class="col-md-6">Sağ el</label>
+                            <label class="col-md-6">Sol el</label>
+
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-2" style="padding-top:2.2%">
+                            <input type="text" class="form-control" />
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3">Esneklik (Kalça Eklemi)</label>
+                        <label class="col-md-3"> cm</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3">Dikey Sıçrama</label>
+                        <label class="col-md-3">cm</label>
+                        <div class="col-md-4" >
+                            <div class="col-xs-4 ">
+                                <input type="text" class="form-control "style="float:left;" />
+                            </div>
+
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" />
+                            </div>
+
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3">flamingo sıçrama testi</label>
+                        <label class="col-md-3">60sn/sn</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="60 sn'de düşme sayısı:" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3">tapping kol hızı:</label>
+                        <label class="col-md-3">25 devir süresi(sn)</label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3">Pro agility çeviklik:</label>
+                        <label class="col-md-3">sn</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="1" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="2" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3">Geriye sağlık topu atma(1kg/1.5kg/2kg)</label>
+                        <label class="col-md-3">m</label>
+                        <div class="col-md-4">
+                            <div class="col-xs-4 " style:"padding-left;">
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" />
+                            </div>
+                            <div class="col-xs-4">
+                                <input type="text" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3">20 m sürat koşusu(ayaktan çıkışla):</label>
+                        <label class="col-md-3">sn</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="10m" />
+                            <input type="text" class="form-control" placeholder="20m" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="10m" />
+                            <input type="text" class="form-control" placeholder="20m" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3">Hızlı Sıçrama:</label>
+                        <label class="col-md-3">20 sn/sn</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="Bir Kez" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-3">Shuttle Run(dayanıklılık):</label>
+                        <label class="col-md-3">Seviye ve basamaktaki hızı(km/saat)</label>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" placeholder="Bir Kez" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-2 col-md-offset-10">
+                            <button class="btn btn-success">Kaydet</button>
+                            <button class="btn btn-success">Kaydet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="gorusler" class="tab-pane fade">
+                <div class="container well">
+                    <div class="row">
+                        <label class="col-md-2 " style="padding-left:3%">Uzman Görüşü:</label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group " style="padding-left:8%; padding-right:5%;padding-top:1.2%">
+
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <label class="col-md-7"> Beden eğitiminin görüşü(çocuğun spora yönlendirilmesini düşünüyorsa gerekçeleri)</label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group " style="padding-left:8%; padding-right:5%;padding-top:1.2%">
+
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1 col-md-offset-10">
+                            <button class="btn btn-success">Kaydet</button>
+                        </div>
+                        <div class="col-md-1">
+                            <button class="btn btn-success">Yazdır</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
